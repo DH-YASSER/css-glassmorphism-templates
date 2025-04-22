@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glass Card</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+      min-height: 100vh; display: flex; justify-content: center; align-items: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 24px;
+      padding: 3rem;
+      color: white;
+      max-width: 380px;
+      width: 90%;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+    p { opacity: 0.8; line-height: 1.6; margin-bottom: 2rem; }
+    button {
+      padding: 12px 32px; border-radius: 100px; border: none;
+      background: white; color: #764ba2; font-weight: bold; cursor: pointer;
+      transition: transform 0.2s;
+    }
+    button:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Glass Card</h2>
+    <p>A beautiful frosted glass card component built with pure CSS backdrop-filter.</p>
+    <button>Get Started</button>
+  </div>
+</body>
+</html>
